@@ -1,0 +1,110 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+* {font-size: 40px;}
+
+
+:root {
+    --color-primary: #c14e37;
+    --container-width: 600px;
+    --container-height: 960px;
+
+}
+body {background-color: #101820;
+    display: flex;
+   }
+.debug button {
+    background-color: #c14e37;
+    color: white;
+    padding: 30px;
+}
+
+#textbox{background-color: white;
+width: var(--container-width);
+height: 120px;}
+
+#miniclone {display: none;}
+.gamecontainer {
+    width:var(--container-width);
+    height: var(--container-height);
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbox {
+    width:var(--container-width);
+    height: calc(var(--container-height) / 2);
+    background-color: rgb(184, 163, 167);
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.playercontainer {
+    width:var(--container-width);
+    height: calc(var(--container-height) / 2);
+    background-color: rgb(59, 53, 87);
+
+}
+
+.boardcontainer {
+    height: calc(var(--container-height) / 2 /1.5);
+    display: flex;
+
+    display: flex;
+    justify-content: space-between; /* Space between the board and piles */
+    padding: 10px;
+    gap: 20px; /* Space between sections */
+}
+
+.board {
+    width: calc(var(--container-width) / 1.25);
+    background-color: rgb(19, 65, 150);
+    display: flex;
+
+
+      gap: 10px; /* Space between rows */
+
+}
+
+
+.boardpile {
+    background-color: #c14e37;
+    height: 300px;
+    width: 25%;
+    padding-top: 100px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.boardpile > div {
+    margin-top: -100px;
+}
+
+.piles {
+    width: calc(var(--container-width) / 5);
+    background-color: rgb(97, 41, 201);
+    display: flex;
+    flex-direction: column;
+}
+
+.deck, .discard {
+    width: 94.5px;
+    height: 132px;
+    background-color: rgb(255, 255, 255);
+    outline: 4px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.handcontainer {
+    height: calc(var(--container-height) / 2 /3);
+    background-color: rgb(53, 87, 60);
+    display: flex;
+}

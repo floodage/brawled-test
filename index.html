@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brawled</title>
+    <link rel="stylesheet" href="style/board.css">
+    <link rel="stylesheet" href="style/mini.css">
+
+    <script type="module" src="/scripts/gamestate.js" defer></script>
+    <script type="module" src="/scripts/render.js" defer></script>
+    <script type="module" src="/scripts/card.js" defer></script>
+    <script type="module" src="/scripts/click.js" defer></script>
+    <script type="module" src="/scripts/load.js" defer></script>
+
+
+</head>
+<body>
+    
+<div class="gamecontainer">
+    <div class="searchbox" id="searchbox"></div>
+    <div id="textbox">  </div>
+
+    <div class="playercontainer">
+        <div class="boardcontainer">
+            <div class="board" id="board">
+             <div class="boardpile" id="board0"></div>
+             <div class="boardpile" id="board1"></div>
+             <div class="boardpile" id="board2"></div>
+             <div class="boardpile" id="board3"></div>
+            </div>
+            <div class="piles">
+                <div class="deck" id="deck">
+                </div>
+                <div class="discard" id="discard">
+                </div>
+            </div>
+        </div>
+        <div class="handcontainer" id="hand">
+           
+
+        </div>
+        <div class="debug">
+            <button id="Load">Load</button>
+            <button id="render">render</button>
+
+        </div>
+    </div>
+</div>
+<div class="mini" id="miniclone">
+    <div class="name-block">
+      <p class="name"></p>
+      <div class="soul"></div>
+    </div>
+    <div class="art"></div>
+
+    <div class="soul-block">
+      <div class="soul"></div>
+      <div class="soul"></div>
+    </div>
+    <b class="effect"></b>
+  </div>
+
+</body>
+</html>

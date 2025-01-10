@@ -1,0 +1,198 @@
+:root {
+    --color-blue: #4D4DFF;
+    --color-green: #3abf3a;
+    --color-purple: #BF3ABF;
+    --color-red: #BF3A3A;
+    --color-teal: #3ABFBF;
+    --color-yellow: #BFBF3A;
+
+    --color-l-blue: #D1D1FF ;
+    --color-l-green: #D1F1D1 ;
+    --color-l-purple: #E8CCE8  ;
+    --color-l-red: #E5C1C1  ;
+    --color-l-teal: #D0E7E7  ;
+    --color-l-yellow: #E4E79B  ;
+  }
+
+
+.mini {
+    width: 94.5px;
+    height: 132px;
+    background-color: rgb(185, 185, 185);
+    border: 8px solid;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.mini .art {
+    width: 100%;
+    height: 100%;
+    background-size: cover!important;
+   
+}
+
+.entry {background-color: orange;}
+.ability {background-color: purple}
+.aura {background-color: #3abf3a;}
+
+.mini .name-block {display: none;}
+.mini .effect {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 2px;
+  margin-top:100px;
+}
+
+.mini.red {border-color: rgb(95, 17, 17);}
+.mini.blue {border-color: rgb(36, 36, 116);}
+.mini.green {border-color: rgb(26, 87, 26);}
+
+.soul {width: 100px; height: 100px;
+border: black solid 2px; border-radius: 100%;}
+
+.soul-block {
+  margin-top: -110px;
+}
+.soul {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  background: white;
+  border-radius: 100%;
+}
+
+.soul.undefined {
+  display: none;
+
+}
+
+.Soul .soul {
+  display: none;
+}
+:root{
+
+}
+
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    font-size: 2px;
+    background-image: url(/art/type_icons.png);
+    background-size: 175px;
+  }
+  
+  
+  .soul.b, .blue .color {
+
+  }
+  
+  .soul.g, .green .color {
+    background-position: -20px;
+  }
+  
+  .soul.p, .purple .color {
+    background-position: -40px;
+  
+  }
+  
+  .soul.r, .red .color {
+    background-position: -60px;
+  
+  }
+  
+  .soul.t, .teal .color {
+    background-position: -80px;
+  
+  }
+  
+  .soul.y, .yellow .color {
+    background-position: -100px;
+  
+  }
+  
+  .soul.w {
+    background-position: 20px;
+  
+  }
+  .soul.b, .blue .color, .b.icon, .blue.card {
+    background-color: var(--color-blue);
+  }
+  
+  .soul.g, .green .color, .g.icon, .green.card {
+    background-color: var(--color-green);
+  }
+  
+  .soul.p, .purple .color, .p.icon, .purple.card {
+    background-color: var(--color-purple);
+  }
+  
+  .soul.r, .red .color, .r.icon, .red.card {
+    background-color: var(--color-red);
+  }
+  
+  .soul.t, .teal .color, .t.icon, .teal.card {
+    background-color: var(--color-teal);
+  }
+  
+  .soul.y, .yellow .color, .y.icon, .yellow.card {
+    background-color: var(--color-yellow);
+  }
+  
+  
+  .blue .name-block, .blue .text-block {
+    background-color: var(--color-l-blue);
+  }
+  
+  .green .name-block, .green .text-block {
+    background-color: var(--color-l-green);
+  }
+  
+  .purple .name-block, .purple .text-block {
+    background-color: var(--color-l-purple);
+  }
+  
+  .red .name-block, .red .text-block {
+    background-color: var(--color-l-red);
+  }
+  
+  .teal .name-block, .teal .text-block {
+    background-color: var(--color-l-teal);
+  }
+  
+  .yellow .name-block, .yellow .text-block {
+    background-color: var(--color-l-yellow);
+  }
+  
+  .name-block, .text-block {
+    background-color: white!important;
+  }
+  
+  .icon.b {
+    background-position: 0;
+  
+  }
+  .icon.g {
+    background-position: -25px;
+  
+  }
+  
+  .icon.p {
+    background-position: -50px;
+  
+  }
+  .icon.r {
+    background-position: -75px;
+  
+  }
+  .icon.t {
+    background-position: -100px;
+  
+  }
+  .icon.y {
+    background-position: -125px;
+  
+  }
+  
+  .soul.w {background-color: #858585;}
