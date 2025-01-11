@@ -27,6 +27,10 @@ let box = document.getElementById('searchbox')
 box.style.visibility = 'visible';
 box.id = location;
 
+if (location === "deck"){
+    gamestate.deck.sort((a, b) => a - b);
+
+}
 
 for (let i = 0; i < gamestate[location].length; i++) {
         let element = document.createElement('div')
@@ -113,7 +117,7 @@ function clearSearch(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("render").addEventListener("click", function () {
+    document.getElementById("loaddeck").addEventListener("click", function () {
 
         render()
     });

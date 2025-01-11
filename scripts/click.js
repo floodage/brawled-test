@@ -121,6 +121,7 @@ let hoveredElement = null;
 
       document.addEventListener('keydown', (event) => {
         if (event.key === '1') {
+          shuffleDeck()
         gamestate.hand.push(gamestate.deck.pop());
         render();
         }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,51 +16,60 @@
 
 
 </head>
+
 <body>
-    
-<div class="gamecontainer">
-    <div class="searchbox" id="searchbox"></div>
-    <div id="textbox">  </div>
+    <div class="header">
+        <h1>Brawled</h1>
+        <div id="menu">
+            <button id="loaddeck">Load Deck</button>
+            <input type="text" id="deckInput" value="0,1,2,2,3,8,8,9,9,10,11,11,15,23,24,21,13,33,34,35">
+    </div>
+    <div class="gamecontainer">
+        <div class="searchbox" id="searchbox"></div>
+        <div id="textbox"> 
+            <div id="textbox-name"></div>
+            <div id="textbox-cardtext"></div>
+        </div>
 
-    <div class="playercontainer">
-        <div class="boardcontainer">
-            <div class="board" id="board">
-             <div class="boardpile" id="board0"></div>
-             <div class="boardpile" id="board1"></div>
-             <div class="boardpile" id="board2"></div>
-             <div class="boardpile" id="board3"></div>
-            </div>
-            <div class="piles">
-                <div class="deck" id="deck">
+        <div class="playercontainer">
+            <div class="boardcontainer">
+                <div class="board" id="board">
+                    <div class="boardpile" id="board0"></div>
+                    <div class="boardpile" id="board1"></div>
+                    <div class="boardpile" id="board2"></div>
+                    <div class="boardpile" id="board3"></div>
                 </div>
-                <div class="discard" id="discard">
+                <div class="piles">
+                    <div class="deck" id="deck">
+                    </div>
+                    <div class="discard" id="discard">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="handcontainer" id="hand">
-           
+            <div class="handcontainer" id="hand">
 
-        </div>
-        <div class="debug">
-            <button id="Load">Load</button>
-            <button id="render">render</button>
 
+            </div>
+            <div class="debug">
+                <button id="Load">Load</button>
+                <button id="render">render</button>
+
+            </div>
         </div>
     </div>
-</div>
-<div class="mini" id="miniclone">
-    <div class="name-block">
-      <p class="name"></p>
-      <div class="soul"></div>
-    </div>
-    <div class="art"></div>
+    <div class="mini" id="miniclone">
+        <div class="name-block">
+            <p class="name"></p>
+            <div class="soul"></div>
+        </div>
 
-    <div class="soul-block">
-      <div class="soul"></div>
-      <div class="soul"></div>
+        <div class="soul-block">
+            <div class="soul"></div>
+            <div class="soul"></div>
+        </div>
+        <b class="effect"></b>
     </div>
-    <b class="effect"></b>
-  </div>
-
+    <div style="color:white;">Q: Stun, E: Hex, R: Ready, F:Front/Back, 1:Draw</div>
 </body>
+
 </html>

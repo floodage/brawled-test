@@ -1,4 +1,5 @@
 export let cards = [];
+import { gamestate } from "./gamestate.js";
 
 var url =
   "https://script.google.com/macros/s/AKfycbwjSmI_tuT9g_spEjwaJCwNlj5AgXrHHIp-525iN6VJFyCbXGtAf4YtiqejxZbbnmR63g/exec";
@@ -33,3 +34,22 @@ var url =
     load();
     
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("loaddeck").addEventListener("click", function () {
+       
+       console.log(document.getElementById('deckInput'));
+       const input = document.getElementById('deckInput').value;
+       // Convert the input into an array of numbers
+       const deckArray = input.split(',').map(num => parseInt(num.trim())).filter(num => !isNaN(num));
+       
+       // Update gamestate.deck with the new array
+       gamestate.deck = deckArray;
+     
+       // Log the updated gamestate for debugging purposes (optional)
+       console.log(gamestate.deck);
+       document.getElementById("menu").innerHTML = "";
+    });
+    
+  })

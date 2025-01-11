@@ -43,8 +43,8 @@ export function renderCard(num, location, position, element) {
 
     element.addEventListener("mouseover", function () {
 
-        let textbox = document.getElementById("textbox");
-        textbox.innerHTML = cards[num]["cardtext"];
+        document.getElementById("textbox-name").innerHTML = cards[num]["name"];
+        document.getElementById("textbox-cardtext").innerHTML = cards[num]["cardtext"];
 
 
     })
